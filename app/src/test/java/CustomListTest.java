@@ -28,8 +28,6 @@ public class CustomListTest {
     }
 
 
-
-
     @Test
     public void hasCityTest(){
         City city = new City("Halifax", "NS");

@@ -65,8 +65,6 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
 
-
-
     /**
      * This checks if the city belongs in the list
      * @param city
@@ -103,8 +101,7 @@ public class CustomList extends ArrayAdapter<City> {
      *      Return the number of cities in the list
      */
     public int countCities(){
-        return 0;
+        return (cities.size());
     }
-
 
 }
