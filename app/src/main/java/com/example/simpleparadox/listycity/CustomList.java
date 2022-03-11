@@ -90,7 +90,11 @@ public class CustomList extends ArrayAdapter<City> {
      *      Thrown if the user tries to delete a city that does not exists in the list
      */
     public void deleteCity(City city){
-        return;
+        if (cities.contains(city)) {
+            cities.remove(city);
+        } else {
+            throw new IllegalArgumentException();
+        }
     }
 
     /**
